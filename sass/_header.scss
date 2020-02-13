@@ -1,0 +1,35 @@
+$background-image: rgba(0, 0, 0, 0.1);
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 90% 10%;
+  align-items: center;
+
+  &__logo {
+    padding-left: 10px;
+    cursor: pointer;
+    &__carservice {
+      height: 40px;
+      width: 200px;
+    }
+  }
+  &__navigation {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: 1fr minmax(100px, auto);
+    justify-items: flex-end;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    &__first {
+      cursor: pointer;
+    }
+    &__second {
+      padding-right: 20px;
+      cursor: pointer;
+    }
+  }
+  &__space {
+  }
+}
