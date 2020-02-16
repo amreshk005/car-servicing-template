@@ -17,8 +17,8 @@
     "compiles:sass": "node-sass sass/main_pricing.scss css/pricing.comp.css",
     "concats:css": "concat -o css/pricing.concat.css css/pricing.comp.css",
     "prefixs:css": "postcss --use autoprefixer -b 'last 10 versions' css/pricing.concat.css -o css/pricing.prefix.css",
-    "compressPrcing:css": "node-sass css/pricing.prefix.css css/pricing.css --output-style compressed",
-    "builds:css": "npm-run-all compile:sass concat:css prefix:css compressPrcing:css"
+    "compressPricing:css": "node-sass css/pricing.prefix.css css/pricing.css --output-style compressed",
+    "builds:css": "npm-run-all compiles:sass concats:css prefixs:css compressPricing:css"
   },
   "keywords": [],
   "author": "",

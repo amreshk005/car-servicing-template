@@ -12,11 +12,11 @@
     // grid-template-rows: 10% 20% 40% 6%;
   }
   // iphone 10
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  @media only screen and (min-device-width: 668px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     margin-top: 10px;
   }
   //iphone 5, 5s
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: 10px;
   }
 
@@ -26,25 +26,29 @@
   }
   &__package {
     grid-row: 1;
-    margin: 10px 0px 20px 110px;
+    // margin: 10px 0px 20px 60px;
     font-size: 1.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     // background-color: rgb(247, 247, 235);
     h2 {
       word-spacing: 4px;
       letter-spacing: 2px;
     }
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-      margin: 0px 0px 0px 120px;
-      font-size: 1.4em;
-    }
-    //iphone 5, 5s
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-      margin: 0px 0px 0px 120px;
-      font-size: 1.4em;
-    }
-    @media only screen and (min-device-width: 425px) and (max-device-width: 475px) {
-      margin: 0px 0px 0px 140px;
-    }
+    // @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    //   margin: 0px 0px 0px 60px;
+    //   font-size: 1.4em;
+    // }
+    // //iphone 5, 5s
+    // @media only screen and (min-device-width: 320px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    //   margin: 0px 0px 0px 60px;
+    //   font-size: 1.4em;
+    // }
+    // @media only screen and (min-device-width: 425px) and (max-device-width: 475px) {
+    //   margin: 0px 0px 0px 60px;
+    // }
   }
   &__price {
     grid-row: 2;
@@ -52,6 +56,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     h2 {
       font-weight: 400;
       @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -94,9 +99,38 @@
     background-color: darkturquoise;
     font-size: 1.6em;
     cursor: pointer;
-    // box-shadow: 10px 10px 10px rgb(247, 231, 231);
+    text-decoration: none;
+    box-shadow: 10px 10px 10px rgb(247, 231, 231);
+    border-radius: 5px;
+    color: black;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     &:hover {
       //   background-color: rgb(179, 255, 0);
+    }
+    h2 {
+      // margin: 13px 0px 0px 75px;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 419px) and (-webkit-min-device-pixel-ratio: 2) {
+      h2 {
+        font-size: 1em;
+      }
+    }
+    //iphone 5, 5s
+    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+      h2 {
+        font-size: 1em;
+      }
+    }
+    @media only screen and (min-device-width: 420px) and (max-device-width: 475px) {
+      h2 {
+        font-size: 1em;
+      }
     }
   }
 }
